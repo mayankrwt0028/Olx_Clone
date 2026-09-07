@@ -1,0 +1,166 @@
+.footer {
+
+  background-color: rgb(255 255 255);
+  color: white;
+}
+
+
+
+.footer-container {
+  max-width: 1400px;
+  margin: auto;
+
+  padding: 50px 20px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(5, 1fr);
+
+  gap: 40px;
+}
+
+
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-column h3 {
+  font-size: 16px;
+
+  margin-bottom: 8px;
+
+  color: rgb(9, 9, 9);
+}
+
+.footer-column a {
+  color: #8d9094;
+
+  font-size: 14px;
+
+  text-decoration: none;
+
+  transition: color 0.2s ease;
+}
+
+.footer-column a:hover {
+  color: #00a49a;
+}
+
+
+
+.footer-description {
+  color: #272829;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+
+  margin-top: 8px;
+}
+
+
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+}
+
+.social-icons a {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  overflow: hidden;
+}
+.social-icons img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.social-icons a:hover {
+  background-color: #00a49a;
+
+  border-color: #00a49a;
+
+  color: white;
+}
+
+
+
+.footer-bottom {
+  border-top: 1px solid #234b50;
+
+  background-color: #00252a;
+}
+
+.footer-bottom-container {
+  max-width: 1400px;
+
+  margin: auto;
+
+  padding: 18px 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  color: #a7babb;
+
+  font-size: 13px;
+}
+
+.store-button {
+  width: 155px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 6px 10px;
+
+  background-color: #355270;
+  color: white;
+
+  border-radius: 6px;
+  text-decoration: none;
+
+  margin-bottom: 10px;
+}
+
+.store-button img {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+}
+
+.store-button div {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.store-button span {
+  font-size: 9px;
+  color: white;
+}
+
+.store-button strong {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+}
+
+#facebook{
+  width: 200px;
+  
+}

@@ -1,0 +1,265 @@
+.header {
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 12px 0;
+}
+
+.header-container {
+  max-width: 1400px;
+  margin: auto;
+  padding: 0 20px;
+
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+
+
+.logo {
+  font-size: 24px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.logo span {
+  color: #002f34;
+}
+
+.logo strong {
+  color: #00a49a;
+}
+
+
+
+.location-box {
+  min-width: 180px;
+  border: 1px solid #bec0c1;
+      border-radius: 33px;
+        width: 28%;
+height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 8px 12px;
+  
+
+  cursor: pointer;
+}
+
+.location-text p {
+  margin: 0;
+  font-size: 11px;
+  color: #777;
+}
+
+.location-text span {
+font-size: 16px;
+    font-weight: 300;
+}
+
+.location-icon {
+  color: #002f34;
+}
+
+.arrow-icon {
+  margin-left: auto;
+  font-size: 12px;
+}
+
+
+
+.search-box {
+  flex: 1;
+
+  display: flex;
+
+  border: 2px solid #b5b7b7;
+  border-radius: 38px;
+
+  overflow: hidden;
+}
+
+.search-box input {
+  width: 100%;
+  border: none;
+  outline: none;
+
+  padding: 13px;
+
+  font-size: 14px;
+}
+
+.search-box button {
+  width: 55px;
+
+  border: 1px solid #0078fa ;
+  border-radius: 19px;
+
+  background-color:#0078fa;
+  color: white;
+
+  cursor: pointer;
+
+  font-size: 18px;
+  font-weight: 300;
+  margin: 3px;
+}
+
+
+
+
+
+.header-action {
+  min-width: 70px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 4px;
+
+  padding: 0;
+
+  border: none;
+  background-color: white;
+
+  color: #002f34;
+
+  cursor: pointer;
+}
+
+.action-icon {
+  font-size: 24px;
+  color: #002f34;
+}
+
+
+.header-action span {
+  font-size: 12px;
+  font-weight: 500;
+}
+.header-action svg {
+  font-size: 30px;
+}
+
+.header-action:hover {
+  color: #007782;
+}
+
+.header-action:hover .action-icon {
+  color: #007782;
+}
+
+
+.sell-btn {
+  padding: 10px 20px;
+
+  border: 5px solid transparent;
+  border-radius: 30px;
+
+  background:
+    linear-gradient(#fff, #fff) padding-box,
+    conic-gradient(
+      from 220deg,
+      #ffce32 0deg 120deg,
+      #42b3ad 120deg 240deg,
+      #0078fa 240deg 360deg
+    ) border-box;
+
+  color: #002f34;
+  font-weight: bold;
+  font-size: 16px;
+
+  cursor: pointer;
+}
+
+/* .sell-btn:hover {
+  color: #002f34;
+} */
+.logo img {
+  width: 100px;
+  height: auto;
+  display: block;
+}
+
+
+@media (max-width: 1024px) {
+  .header-container {
+    gap: 10px;
+  }
+
+  .location-box {
+    min-width: 150px;
+  }
+
+  .sell-btn {
+    padding: 9px 15px;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .header {
+    padding: 10px 0;
+  }
+
+  .header-container {
+    flex-wrap: wrap;
+    padding: 0 15px;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  .location-box {
+    min-width: auto;
+    flex: 1;
+  }
+
+  .search-box {
+    order: 2;
+    flex-basis: 100%;
+  }
+
+  .header-icon {
+    font-size: 18px;
+  }
+
+  .login-btn {
+    font-size: 14px;
+  }
+
+  .sell-btn {
+    padding: 8px 14px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .location-text {
+    display: none;
+  }
+
+  .location-box {
+    flex: none;
+    min-width: auto;
+  }
+
+  .arrow-icon {
+    display: none;
+  }
+
+  .header-container {
+    gap: 12px;
+  }
+
+  .sell-btn {
+    padding: 7px 12px;
+  }
+}

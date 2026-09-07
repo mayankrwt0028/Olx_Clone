@@ -1,0 +1,91 @@
+.sell-banner {
+  padding: 60px 20px;
+  background-color: #ffffff;
+}
+
+.sell-banner-container {
+  max-width: 1200px;
+  margin: auto;
+
+  padding: 40px;
+
+  display: flex;
+  align-items: center;
+  gap: 25px;
+
+  border-radius: 16px;
+
+  background: linear-gradient(
+    135deg,
+    #002f34,
+    #00545c
+  );
+
+  color: white;
+}
+
+
+
+.sell-banner-icon {
+  width: 70px;
+  height: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background-color: rgba(255, 255, 255, 0.15);
+
+  font-size: 30px;
+}
+
+
+
+.sell-banner-content {
+  flex: 1;
+}
+
+.sell-banner-content h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.sell-banner-content p {
+  font-size: 15px;
+  line-height: 1.6;
+
+  opacity: 0.85;
+
+  max-width: 550px;
+}
+
+
+
+.start-selling-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 14px 24px;
+
+  border: none;
+  border-radius: 8px;
+
+  background-color: #ffffff;
+  color: #002f34;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.start-selling-btn:hover {
+  transform: translateY(-2px);
+}
