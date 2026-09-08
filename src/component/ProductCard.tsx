@@ -29,18 +29,19 @@ function ProductCard({ product }: ProductCardProps) {
 
 
       <div className="product-details">
-        {/* Price */}
+
         <h3 className="product-price">
           ₹{product.price.toLocaleString("en-IN")}
         </h3>
 
-      
+
         <p className="product-title">
           {product.title}
         </p>
 
-       
+
         <div className="product-footer">
+
           <span className="product-location">
             {product.location}
           </span>
@@ -48,8 +49,11 @@ function ProductCard({ product }: ProductCardProps) {
           <span className="product-date">
             {product.date}
           </span>
+
         </div>
+
       </div>
+
     </article>
   );
 }

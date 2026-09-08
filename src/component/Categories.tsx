@@ -20,12 +20,7 @@ function Categories({
         <div className="section-header">
           <h2>Popular Categories</h2>
 
-          <button
-            type="button"
-            onClick={() => setSelectedCategory("")}
-          >
-            View All
-          </button>
+          
         </div>
 
         <div className="categories-grid">
@@ -51,8 +46,8 @@ function Categories({
                 />
               </div>
 
-              <h3>{category.name}</h3>
 
+              <h3>{category.name}</h3>
             </button>
           ))}
 

@@ -1,98 +1,146 @@
 .product-card {
-  background-color: #ffffff;
-  border: 1px solid #e0e0e0;
-  border-radius: 4px;
+  position: relative;
+
+  background: #fff;
+
+  border: 1px solid #d8dfe0;
+  border-radius: 8px;
+
   overflow: hidden;
+
   cursor: pointer;
-  transition:
-    box-shadow 0.2s ease,
-    transform 0.2s ease;
+
+  transition: all 0.2s ease;
+
+  min-height: 320px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* Yellow OLX style border */
+
+.product-card::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  width: 4px;
+  height: 45%;
+
+  background-color: #ffce32;
+
+  z-index: 2;
 }
 
 .product-card:hover {
+  box-shadow: 0 4px 14px rgba(0, 47, 52, 0.15);
+
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
 
+/* ================= IMAGE ================= */
 
 .product-image {
   position: relative;
+
   width: 100%;
   height: 210px;
-  /* background-color: #f2f2f2; */
-  border: 1px solid rgb(255, 246, 246);
+
+  padding: 10px;
 
   overflow: hidden;
-  padding: 10px;
+
+  background-color: #f5f5f5;
+
+  box-sizing: border-box;
 }
 
 .product-image img {
   width: 100%;
   height: 100%;
-  border: 1px solid rgb(243, 239, 239);
-  background-color: rgb(243, 239, 239);
-  padding: 10px;
-  object-fit: cover;
+background-color: #e4e6e6;
   display: block;
+
+  object-fit: cover;
 }
 
 
+/* ================= HEART ================= */
 
 .wishlist-btn {
   position: absolute;
+
   top: 12px;
   right: 12px;
 
-  width: 34px;
-  height: 34px;
+  width: 44px;
+  height: 44px;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
   border: none;
+
   border-radius: 50%;
 
-  background-color: #ffffff;
-  color: #002f34;
-
-  cursor: pointer;
-  font-size: 17px;
-
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-}
-
-.wishlist-btn:hover {
-  color: #ff3b3b;
-}
-
-
-
-.product-details {
-  padding: 12px 14px 14px;
-}
-
-
-
-.product-price {
-  margin: 0 0 7px;
+  background-color: white;
 
   color: #002f34;
 
   font-size: 20px;
-  font-weight: 700;
+
+  cursor: pointer;
+
+  z-index: 5;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.wishlist-btn:hover {
+  color: #ff0000;
 }
 
 
+/* ================= DETAILS ================= */
 
-.product-title {
+.product-details {
+  padding: 14px 16px 12px;
+
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* PRICE */
+
+.product-price {
   margin: 0;
 
-  color: #333;
+  color: #002f34;
 
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 22px;
+  font-weight: 700;
+
+  letter-spacing: 0.3px;
+}
+
+
+/* TITLE */
+
+.product-title {
+  margin: 8px 0 0;
+
+  color: #5f6a6b;
+
+  font-size: 16px;
 
   line-height: 1.4;
 
@@ -102,72 +150,75 @@
 }
 
 
+/* ================= FOOTER ================= */
 
 .product-footer {
   display: flex;
-  align-items: center;
+
   justify-content: space-between;
 
-  margin-top: 14px;
+  align-items: center;
+
+  margin-top: auto;
+
+  padding-top: 18px;
 }
+
 
 .product-location,
 .product-date {
-  color: #666;
+  color: #6b7475;
 
-  font-size: 10px;
-  font-weight: 500;
+  font-size: 11px;
 
   text-transform: uppercase;
+
+  white-space: nowrap;
 }
+
 
 .product-location {
   max-width: 65%;
 
-  white-space: nowrap;
   overflow: hidden;
+
   text-overflow: ellipsis;
 }
 
 
+/* ================= RESPONSIVE ================= */
 
 @media (max-width: 768px) {
+
   .product-image {
     height: 190px;
   }
 
-  .product-details {
-    padding: 11px 12px 13px;
-  }
-
   .product-price {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .product-title {
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 
 
-
 @media (max-width: 480px) {
+
   .product-image {
     height: 170px;
   }
 
   .wishlist-btn {
-    width: 30px;
-    height: 30px;
+    width: 38px;
+    height: 38px;
 
-    top: 8px;
-    right: 8px;
-
-    font-size: 15px;
+    font-size: 17px;
   }
 
   .product-price {
-    font-size: 17px;
+    font-size: 18px;
   }
 
   .product-location,
