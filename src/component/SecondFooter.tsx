@@ -6,29 +6,52 @@ import "./SecondFooter.css";
 
 const SecondFooter = () => {
   return (
-    <header className="brand-header">
+    <section className="brand-footer">
       <div className="brand-container">
 
-        
+
         <div className="group-logo">
-          <span className="car">Car</span>
-          <span className="trade-circle">T</span>
-          <span className="rade">rade</span>
-          <span className="tech">Tech</span>
-          <span className="group-text">GROUP</span>
+
+          <div className="group-logo-main">
+            <span>Car</span>
+
+            <span className="trade-circle">
+              T
+            </span>
+
+            <span>rade</span>
+
+            <span className="tech">
+              Tech
+            </span>
+          </div>
+
+          <span className="group-text">
+            GROUP
+          </span>
+
         </div>
 
-        
+
+ 
         <div className="header-divider" />
 
-        
-        <div className="brand-item olx">
-          <span className="olx-main">ol</span>
-          <span className="olx-x">x</span>
-          <small>INDIA</small>
-        </div>
 
     
+        <div className="brand-item olx">
+
+          <div className="olx-logo">
+            olx
+          </div>
+
+          <small>
+            INDIA
+          </small>
+
+        </div>
+
+
+     
         <div className="brand-item carwale">
           <img
             src={carwaleImage}
@@ -37,6 +60,7 @@ const SecondFooter = () => {
         </div>
 
 
+    
         <div className="brand-item bikewale">
           <img
             src={bikewaleImage}
@@ -44,23 +68,47 @@ const SecondFooter = () => {
           />
         </div>
 
-       
-        <div className="brand-item active-brand">
-          <span className="cartrade-car">Car</span>
-          <span className="cartrade-t">T</span>
+
+    
+        <div className="brand-item cartrade">
+
+          <span>Car</span>
+
+          <span className="cartrade-t">
+            T
+          </span>
+
           <span>rade</span>
+
         </div>
 
-       
+
+
         <div className="brand-item mobility">
+
           <img
             src={mobilityImage}
             alt="Mobility Outlook"
           />
+
         </div>
 
       </div>
-    </header>
+
+
+      <div className="brand-footer-bottom">
+
+        <span>
+          Help - Sitemap
+        </span>
+
+        <span>
+          All rights reserved © 2006-2026 OLX
+        </span>
+
+      </div>
+
+    </section>
   );
 };
 

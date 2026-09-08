@@ -1,10 +1,7 @@
 .footer {
-
   background-color: rgb(255 255 255);
   color: white;
 }
-
-
 
 .footer-container {
   max-width: 1400px;
@@ -14,13 +11,10 @@
 
   display: grid;
 
-  grid-template-columns:
-    repeat(5, 1fr);
+  grid-template-columns: repeat(5, 1fr);
 
   gap: 40px;
 }
-
-
 
 .footer-column {
   display: flex;
@@ -50,8 +44,6 @@
   color: #00a49a;
 }
 
-
-
 .footer-description {
   color: #272829;
 
@@ -61,8 +53,6 @@
 
   margin-top: 8px;
 }
-
-
 
 .social-icons {
   display: flex;
@@ -93,8 +83,6 @@
 
   color: white;
 }
-
-
 
 .footer-bottom {
   border-top: 1px solid #234b50;
@@ -160,7 +148,28 @@
   color: white;
 }
 
-#facebook{
+#facebook {
   width: 200px;
-  
+}
+
+.store-image-button {
+  display: block;
+
+  width: 140px;
+
+  height: auto;
+
+  margin-top: 2px;
+}
+
+.store-image-button img {
+  display: block;
+
+  width: 100%;
+
+  height: auto;
+
+  object-fit: contain;
+
+  cursor: pointer;
 }

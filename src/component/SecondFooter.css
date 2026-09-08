@@ -2,427 +2,345 @@
   box-sizing: border-box;
 }
 
-.brand-header {
+.brand-footer {
   width: 100%;
-  height: 165px;
-  background: #07539b;
 
-  display: flex;
-  align-items: center;
+  background-color: #0a4f8f;
 
-  overflow: hidden;
+  color: #ffffff;
 }
 
 .brand-container {
   width: 100%;
-  height: 100%;
+
+  max-width: 1450px;
+
+  margin: 0 auto;
+
+  min-height: 145px;
+
+  padding: 25px 60px;
 
   display: flex;
+
   align-items: center;
 
-  padding: 0 55px;
+  justify-content: space-between;
 
-  flex-wrap: nowrap;
-  white-space: nowrap;
-
-  overflow-x: auto;
-  overflow-y: hidden;
-
-  scrollbar-width: thin;
+  gap: 35px;
 }
-
-
-
 
 .group-logo {
   position: relative;
 
-  width: 285px;
-  height: 90px;
+  min-width: 250px;
 
-  flex-shrink: 0;
+  height: 85px;
 
   display: flex;
+
   align-items: center;
 
-  color: white;
+  justify-content: center;
+
+  flex-direction: column;
 
   font-family: Arial, sans-serif;
+
   font-weight: 700;
-  cursor: pointer;
+
+  color: #ffffff;
 }
 
-.group-logo .car {
-  font-size: 31px;
+.group-logo-main {
+  display: flex;
+
+  align-items: center;
+
+  font-size: 28px;
+
+  line-height: 1;
 }
 
 .trade-circle {
-  width: 34px;
-  height: 34px;
+  width: 30px;
 
-  margin-left: 2px;
+  height: 30px;
+
+  margin: 0 2px;
 
   border-radius: 50%;
 
-  background: white;
-  color: #07539b;
+  background-color: #ffffff;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  font-size: 26px;
-  font-weight: 800;
-}
-
-.group-logo .rade {
-  font-size: 31px;
-}
-
-.group-logo .tech {
-  font-size: 31px;
-
-  color: #dcecff;
-
-  margin-left: 2px;
-}
-
-.group-text {
-  position: absolute;
-
-  right: 60px;
-  bottom: 5px;
-
-  font-size: 17px;
-  letter-spacing: 0.5px;
-}
-
-
-
-
-.header-divider {
-  width: 1px;
-  height: 120px;
-
-  flex-shrink: 0;
-
-  background: rgba(255, 255, 255, 0.8);
-
-  margin-left: 0;
-  margin-right: 55px;
-}
-
-
-
-
-.brand-item {
-  height: 95px;
-
-  flex-shrink: 0;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  color: white;
-
-  white-space: nowrap;
-
-  font-family: Arial, sans-serif;
-}
-
-
-
-
-.olx {
-  position: relative;
-
-  width: 105px;
-
-  margin-right: 65px;
-  cursor: pointer;
-}
-
-.olx-main {
-  font-size: 48px;
-
-  font-weight: 800;
-
-  letter-spacing: -6px;
-}
-
-.olx-x {
-  font-size: 46px;
-
-  font-weight: 800;
-
-  margin-left: 3px;
-}
-
-.olx small {
-  position: absolute;
-
-  font-size: 6px;
-
-  letter-spacing: 1px;
-
-  bottom: 19px;
-  right: 10px;
-}
-
-
-
-
-.carwale {
-  width: 150px;
-  height: 95px;
-
-  margin-right: 55px;
-
-  flex-shrink: 0;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-
-.carwale img {
-  width: 125px;
-  height: auto;
-  display: block;
-}
-
-
-.bikewale {
-  width: 145px;
-  height: 95px;
-
-  margin-right: 50px;
-
-  flex-shrink: 0;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-
-.bikewale img {
-  width: 120px;
-  height: auto;
-  display: block;
-}
-
-
-.mobility {
-  width: 150px;
-  height: 95px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  flex-shrink: 0;
-  cursor: pointer;
-}
-
-.mobility img {
-  width: 135px;
-  height: auto;
-  display: block;
-}
-
-
-
-
-.active-brand {
-  width: 205px;
-  height: 95px;
-
-  flex-shrink: 0;
-
-  border: 2px solid rgba(255, 255, 255, 0.85);
-
-  border-radius: 7px;
-
-  font-size: 24px;
-
-  font-weight: 700;
-
-  margin-right: 55px;
-  cursor: pointer;
-}
-
-.cartrade-t {
-  width: 28px;
-  height: 28px;
-
-  border-radius: 50%;
-
-  background: white;
-  color: #07539b;
+  color: #0a4f8f;
 
   display: inline-flex;
 
   align-items: center;
+
   justify-content: center;
 
-  font-size: 21px;
+  font-size: 23px;
+
+  font-weight: 800;
+}
+
+.tech {
+  margin-left: 2px;
+
+  color: #dce9f5;
+}
+
+.group-text {
+  margin-top: 3px;
+
+  margin-left: 90px;
+
+  font-size: 14px;
+
+  letter-spacing: 0.5px;
+}
+
+.header-divider {
+  width: 1px;
+
+  height: 95px;
+
+  flex-shrink: 0;
+
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.brand-item {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  font-family: Arial, sans-serif;
+
+  color: #ffffff;
 
   cursor: pointer;
+}
+
+.olx {
+  position: relative;
+
+  min-width: 95px;
+
+  height: 80px;
+
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+.olx-logo {
+  font-size: 42px;
+
+  font-weight: 800;
+
+  letter-spacing: -4px;
+
+  line-height: 1;
+}
+
+.olx small {
+  margin-top: 5px;
+
+  margin-left: 25px;
+
+  font-size: 6px;
+
+  letter-spacing: 1.5px;
+
+  color: #ffffff;
+}
+
+.carwale {
+  min-width: 130px;
+}
+
+.carwale img {
+  width: 120px;
+
+  height: auto;
+
+  display: block;
+
+  object-fit: contain;
+}
+
+.bikewale {
+  min-width: 130px;
+}
+
+.bikewale img {
+  width: 120px;
+
+  height: auto;
+
+  display: block;
+
+  object-fit: contain;
+}
+
+.cartrade {
+  min-width: 135px;
+
+  font-size: 25px;
+
+  font-weight: 700;
+}
+
+.cartrade-t {
+  width: 28px;
+
+  height: 28px;
+
   margin: 0 2px;
+
+  border-radius: 50%;
+
+  background-color: #ffffff;
+
+  color: #0a4f8f;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 20px;
+
+  font-weight: 800;
 }
 
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 1300px) {
-  .brand-container {
-    padding: 0 25px;
-  }
-
-  .header-divider {
-    margin-right: 35px;
-  }
-
-  .olx {
-    margin-right: 40px;
-  }
-
-  .carwale {
-    margin-right: 35px;
-  }
-
-  .bikewale {
-    margin-right: 30px;
-  }
-
-  .active-brand {
-    margin-right: 35px;
-  }
+.mobility {
+  min-width: 150px;
 }
 
+.mobility img {
+  width: 135px;
 
+  height: auto;
 
+  display: block;
 
-@media (max-width: 1100px) {
-  .brand-header {
-    height: 140px;
-  }
+  object-fit: contain;
+}
 
+.brand-footer-bottom {
+  width: 100%;
+
+  max-width: 1450px;
+
+  margin: 0 auto;
+
+  min-height: 55px;
+
+  padding: 15px 60px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+  font-size: 12px;
+
+  color: rgba(255, 255, 255, 0.85);
+}
+
+@media (max-width: 1200px) {
   .brand-container {
-    padding: 0 15px;
+    padding: 25px 35px;
+
+    gap: 25px;
   }
 
   .group-logo {
-    width: 235px;
-    height: 75px;
+    min-width: 220px;
   }
 
-  .group-logo .car,
-  .group-logo .rade,
-  .group-logo .tech {
-    font-size: 25px;
+  .group-logo-main {
+    font-size: 24px;
   }
 
-  .trade-circle {
-    width: 29px;
-    height: 29px;
-    font-size: 22px;
+  .carwale img,
+  .bikewale img {
+    width: 105px;
   }
 
-  .group-text {
-    font-size: 14px;
-  }
-
-  .header-divider {
-    height: 100px;
-    margin-right: 25px;
-  }
-
-  .olx {
-    margin-right: 30px;
-  }
-
-  .carwale {
-    margin-right: 25px;
-  }
-
-  .bikewale {
-    margin-right: 20px;
-  }
-
-  .active-brand {
-    margin-right: 25px;
-  }
-
-  .brand-item {
-    transform: scale(0.9);
+  .mobility img {
+    width: 120px;
   }
 }
 
+@media (max-width: 900px) {
+  .brand-container {
+    justify-content: flex-start;
 
+    overflow-x: auto;
 
+    gap: 30px;
 
-@media (max-width: 800px) {
-  .brand-header {
-    height: 120px;
+    padding: 25px 20px;
+
+    scrollbar-width: none;
   }
 
+  .brand-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .brand-footer-bottom {
+    padding: 15px 20px;
+  }
+}
+
+@media (max-width: 600px) {
   .brand-container {
-    padding: 0 10px;
+    min-height: 110px;
+  }
+
+  .header-divider {
+    height: 70px;
   }
 
   .group-logo {
-    width: 195px;
+    min-width: 190px;
   }
 
-  .group-logo .car,
-  .group-logo .rade,
-  .group-logo .tech {
+  .group-logo-main {
     font-size: 21px;
   }
 
   .trade-circle {
     width: 25px;
+
     height: 25px;
-    font-size: 19px;
+
+    font-size: 18px;
   }
 
   .group-text {
-    font-size: 12px;
+    font-size: 11px;
   }
 
-  .header-divider {
-    height: 85px;
-    margin-right: 15px;
-  }
+  .brand-footer-bottom {
+    flex-direction: column;
 
-  .brand-item {
-    transform: scale(0.78);
-  }
+    align-items: flex-start;
 
-  .olx {
-    margin-right: 15px;
-  }
-
-  .carwale {
-    margin-right: 10px;
-  }
-
-  .bikewale {
-    margin-right: 10px;
-  }
-
-  .active-brand {
-    margin-right: 10px;
+    gap: 8px;
   }
 }

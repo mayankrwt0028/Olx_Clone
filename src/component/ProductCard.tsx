@@ -1,4 +1,4 @@
-import { FaHeart } from "react-icons/fa";
+import { CiHeart } from "react-icons/ci";
 
 import type { Product } from "../storage/product";
 
@@ -13,6 +13,7 @@ function ProductCard({ product }: ProductCardProps) {
     <article className="product-card">
 
       <div className="product-image">
+
         <img
           src={product.thumbnail}
           alt={product.title}
@@ -23,10 +24,10 @@ function ProductCard({ product }: ProductCardProps) {
           type="button"
           aria-label="Add to wishlist"
         >
-          <FaHeart />
+          <CiHeart />
         </button>
-      </div>
 
+      </div>
 
       <div className="product-details">
 
@@ -34,11 +35,9 @@ function ProductCard({ product }: ProductCardProps) {
           ₹{product.price.toLocaleString("en-IN")}
         </h3>
 
-
         <p className="product-title">
           {product.title}
         </p>
-
 
         <div className="product-footer">
 

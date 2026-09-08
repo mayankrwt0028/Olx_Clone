@@ -1,0 +1,191 @@
+.try-olx-app {
+  width: 100%;
+
+  background-color: #f7f7f7;
+}
+
+.try-olx-container {
+  width: 85%;
+
+  margin: 0 auto;
+
+  min-height: 260px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+.try-olx-image {
+  width: 32%;
+
+  height: 260px;
+
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+.try-olx-image img {
+  width: 100%;
+
+  max-width: 380px;
+
+  height: auto;
+
+  display: block;
+}
+
+.try-olx-content {
+  width: 32%;
+
+  padding: 0 40px;
+}
+
+.try-olx-content h2 {
+  margin: 0 0 14px;
+
+  color: #002f34;
+
+  font-size: 32px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.5px;
+}
+
+.try-olx-content p {
+  margin: 0;
+
+  color: #002f34;
+
+  font-size: 18px;
+
+  line-height: 1.4;
+}
+
+.try-olx-divider {
+  width: 1px;
+
+  height: 130px;
+
+  background-color: #c7ced0;
+
+  flex-shrink: 0;
+}
+
+.try-olx-download {
+  width: 28%;
+
+  padding-left: 30px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+.download-title {
+  margin-bottom: 12px;
+
+  color: #002f34;
+
+  font-size: 13px;
+
+  font-weight: 700;
+}
+
+.download-buttons {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+.download-buttons img {
+  width: 120px;
+
+  height: 40px;
+
+  object-fit: contain;
+
+  cursor: pointer;
+
+  transition: transform 0.2s ease;
+}
+
+.download-buttons img:hover {
+  transform: scale(1.03);
+}
+
+@media (max-width: 1000px) {
+  .try-olx-container {
+    width: 95%;
+  }
+
+  .try-olx-content {
+    padding: 0 25px;
+  }
+
+  .try-olx-content h2 {
+    font-size: 26px;
+  }
+
+  .try-olx-content p {
+    font-size: 16px;
+  }
+
+  .download-buttons img {
+    width: 105px;
+  }
+}
+
+@media (max-width: 768px) {
+  .try-olx-container {
+    flex-direction: column;
+
+    padding: 30px 20px;
+
+    text-align: center;
+  }
+
+  .try-olx-image {
+    width: 100%;
+
+    height: 200px;
+  }
+
+  .try-olx-image img {
+    max-width: 280px;
+  }
+
+  .try-olx-content {
+    width: 100%;
+
+    padding: 25px 0;
+  }
+
+  .try-olx-divider {
+    width: 100%;
+
+    height: 1px;
+  }
+
+  .try-olx-download {
+    width: 100%;
+
+    padding: 25px 0 0;
+
+    align-items: center;
+  }
+}

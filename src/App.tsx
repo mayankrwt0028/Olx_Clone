@@ -11,6 +11,8 @@ import type { Product } from "./storage/product";
 
 import "./App.css";
 import SecondFooter from "./component/SecondFooter";
+import TryOlx from "./component/TryOlx";
+import DownloadApp from "./component/DownloadingApp";
 
 function App() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -157,6 +159,7 @@ function App() {
         searchTerm={searchTerm}
         setSearchTerm={setSearchTerm}
       />
+      <main className="page-container">
 
       <CategoryNav
         selectedCategory={selectedCategory}
@@ -193,10 +196,12 @@ function App() {
         </>
       )}
 
-  
+  <TryOlx />
 
       <Footer />
       <SecondFooter />
+      <DownloadApp />
+      </main>
     </>
   );
 }

@@ -4,18 +4,16 @@ import instaIcon from "../images/insta.jpeg";
 import youtubeIcon from "../images/youtube.jpeg";
 import twitterIcon from "../images/twitter.jpeg";
 import linkedinIcon from "../images/linkdin.png";
-import appleIcon from "../images/apple.png";
-import whatsappIcon from "../images/whatapp.jpeg"
-import facebookIcon from "../images/facebook.jpeg"
+import whatsappIcon from "../images/whatapp.jpeg";
+import facebookIcon from "../images/facebook.jpeg";
 
-import playstoreIcon from "../images/playstore.png";
+import appStoreImage from "../images/app2.png";
+import playStoreImage from "../images/play2.png";
 
 function Footer() {
   return (
     <footer className="footer">
       <div className="footer-container">
-
-
         <div className="footer-column">
           <h3>Popular Locations</h3>
 
@@ -25,7 +23,7 @@ function Footer() {
           <a href="#">Pune</a>
         </div>
 
-
+        {/* Trending Locations */}
         <div className="footer-column">
           <h3>Trending Locations</h3>
 
@@ -35,7 +33,6 @@ function Footer() {
           <a href="#">Nashik</a>
         </div>
 
-    
         <div className="footer-column">
           <h3>About Us</h3>
 
@@ -45,7 +42,6 @@ function Footer() {
           <a href="#">Careers</a>
         </div>
 
-       
         <div className="footer-column">
           <h3>OLX India</h3>
 
@@ -55,55 +51,43 @@ function Footer() {
           <a href="#">Vulnerability Disclosure Program</a>
         </div>
 
-        
-    
-<div className="footer-column follow-us">
-  <h3>FOLLOW US</h3>
+        <div className="footer-column follow-us">
+          <h3>FOLLOW US</h3>
 
-  <div className="social-icons">
-    <a href="#">
-      <img src={instaIcon} alt="Instagram" />
-    </a>
-     <a href="#">
-      <img src={facebookIcon} alt="Facebook" id="facebook" />
-    </a>
+          <div className="social-icons">
+            <a href="#">
+              <img src={facebookIcon} alt="Facebook" />
+            </a>
 
-    <a href="#">
-      <img src={youtubeIcon} alt="YouTube" />
-    </a>
+            <a href="#">
+              <img src={instaIcon} alt="Instagram" />
+            </a>
 
-    <a href="#">
-      <img src={twitterIcon} alt="Twitter" />
-    </a>
-     <a href="#">
-      <img src={whatsappIcon} alt="WhatsApp" />
-    </a>
+            <a href="#">
+              <img src={youtubeIcon} alt="YouTube" />
+            </a>
 
-    <a href="#">
-      <img src={linkedinIcon} alt="LinkedIn" />
-    </a>
+            <a href="#">
+              <img src={twitterIcon} alt="Twitter" />
+            </a>
 
-  </div>
+            <a href="#">
+              <img src={whatsappIcon} alt="WhatsApp" />
+            </a>
 
+            <a href="#">
+              <img src={linkedinIcon} alt="LinkedIn" />
+            </a>
+          </div>
 
-  <a href="#" className="store-button">
-    <img src={playstoreIcon} alt="Google Play" />
-    <div>
-      <span>GET IT ON</span>
-      <strong>Google Play</strong>
-    </div>
-  </a>
+          <a href="#" className="store-image-button">
+            <img src={playStoreImage} alt="Get it on Google Play" />
+          </a>
 
-  {/* App Store */}
-  <a href="#" className="store-button">
-    <img src={appleIcon} alt="App Store" />
-    <div>
-      <span>Download on the</span>
-      <strong>App Store</strong>
-    </div>
-  </a>
-</div>
-
+          <a href="#" className="store-image-button">
+            <img src={appStoreImage} alt="Download on the App Store" />
+          </a>
+        </div>
       </div>
     </footer>
   );
