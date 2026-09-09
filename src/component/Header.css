@@ -7,13 +7,15 @@
 
   height: 72px;
 
-  background-color: #ffffff;
+  background-color:rgb(203 234 237 / 3%);
 
   border-bottom: 1px solid #e5e5e5;
 
   display: flex;
 
   align-items: center;
+  
+
 }
 
 
@@ -45,7 +47,9 @@
 }
 
 .logo img {
-  width: 63px;
+  width: 48px;
+
+  margin-bottom: 4px;
 
   height: auto;
 
@@ -55,13 +59,15 @@
 
 
 .location-box {
-  width: 220px;
-
-  height: 50px;
-
+   
+    
+    width: 254px;
+    height: 49px;
+margin-bottom: 5px;
+margin-left: 7px;
   flex-shrink: 0;
 
-  border: 1px solid #d9d9d9;
+  border: 1px solid #d9dadb;
 
   border-radius: 28px;
 
@@ -71,8 +77,8 @@
 
   gap: 10px;
 
-  padding: 0 15px;
-
+  /* padding: 0 15px; */
+padding: 3px 21px 0 16px;
   cursor: pointer;
 
   background-color: #ffffff;
@@ -91,19 +97,17 @@
 }
 
 .location-text span {
-  font-size: 15px;
-
-  font-weight: 400;
-
-  color: #002f34;
+  font-size: 16px;
+    font-weight: 100;
+    color: #020812;
+    margin-left: -3px;
 }
 
 .arrow-icon {
-  margin-left: auto;
-
-  font-size: 14px;
-
-  color: #b5b5b5;
+    margin-left: auto;
+    font-size: 16px;
+    font-weight: 100;
+    color: #b5b5b5;
 }
 
 
@@ -113,7 +117,8 @@
   /* font-size: 16px; */
   min-width: 100px;
 
-  height: 50px;
+height: 49px;
+    margin-bottom: 3px;
 
   display: flex;
 
@@ -142,9 +147,10 @@
 
   padding: 0 30px;
 
-  font-size: 14px;
+  /* font-size: 14px; */
 
-  color: #002f34;
+  color: #d4d6d6;
+  font-weight: 100;
 }
 
 .search-box input::placeholder {
@@ -152,7 +158,7 @@
 }
 
 .search-box button {
-  width: 46px;
+  width: 50px;
 
   height: 42px;
 

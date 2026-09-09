@@ -38,6 +38,9 @@ function ProductCard({ product }: ProductCardProps) {
         <p className="product-title">
           {product.title}
         </p>
+        {/* <p className="product-description">
+          {product.description}
+        </p> */}
 
         <div className="product-footer">
 

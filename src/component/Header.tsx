@@ -1,6 +1,8 @@
-import { FaSearch, FaChevronRight } from "react-icons/fa";
+import { FaSearch } from "react-icons/fa";
 
 import { CiUser, CiHeart } from "react-icons/ci";
+
+import { IoChevronForwardOutline } from "react-icons/io5";
 
 import logo from "../images/logo.png";
 
@@ -23,8 +25,8 @@ function Header({ searchTerm, setSearchTerm }: HeaderProps) {
         <div className="location-box">
           <svg
             className="location-icon"
-            width="20"
-            height="20"
+            width="21"
+            height="21"
             viewBox="0 0 1024 1024"
             fill="currentColor"
           >
@@ -35,7 +37,7 @@ function Header({ searchTerm, setSearchTerm }: HeaderProps) {
             <span>India</span>
           </div>
 
-          <FaChevronRight className="arrow-icon" />
+          <IoChevronForwardOutline className="arrow-icon" />
         </div>
 
         <div className="search-box">

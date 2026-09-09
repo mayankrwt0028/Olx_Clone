@@ -17,11 +17,11 @@ function Categories({
     <section className="categories-section">
       <div className="categories-container">
 
-        <div className="section-header">
+        {/* <div className="section-header">
           <h2>Popular Categories</h2>
 
           
-        </div>
+        </div> */}
 
         <div className="categories-grid">
 

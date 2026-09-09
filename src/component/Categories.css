@@ -7,9 +7,11 @@
 }
 
 .categories-container {
-  max-width: 1230px;
+  /* max-width: 1230px; */
 
-  margin: 0 auto;
+  /* margin: 0 auto;
+   */
+margin: 14px 154px 19px 85px;
 
   padding: 0 20px;
 }
