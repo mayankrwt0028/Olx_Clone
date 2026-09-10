@@ -13,7 +13,7 @@
 .brand-container {
   width: 100%;
 
-  max-width: 1450px;
+  max-width: 1315px;
 
   margin: 0 auto;
 
@@ -237,27 +237,17 @@
 }
 
 .brand-footer-bottom {
-  width: 100%;
-
-  max-width: 1450px;
-
-  margin: 0 auto;
-
-  min-height: 55px;
-
-  padding: 15px 60px;
-
-  display: flex;
-
-  align-items: center;
-
-  justify-content: space-between;
-
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-
-  font-size: 12px;
-
-  color: rgba(255, 255, 255, 0.85);
+    width: 100%;
+    max-width: 1327px;
+   margin-left: 140px;
+    min-height: 55px;
+    padding: 15px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border-top: 1px solid rgba(255, 255, 255, 0.08); */
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.85);
 }
 
 @media (max-width: 1200px) {

@@ -190,7 +190,7 @@ function App() {
             >
               {loadingMore
                 ? "Loading..."
-                : "Load More"}
+                : "Load more"}
             </button>
           </div>
         </>

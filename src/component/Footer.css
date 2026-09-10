@@ -1,17 +1,16 @@
 .footer {
-  background-color: rgb(255 255 255);
-  color: white;
+  width: 100%;
+  background-color: #f2f2f2;
 }
 
 .footer-container {
-  max-width: 1400px;
-  margin: auto;
-
-  padding: 50px 20px;
+  width: 78%;
+  margin: 0 auto;
 
   display: grid;
-
   grid-template-columns: repeat(5, 1fr);
+
+  padding: 50px 0 45px;
 
   gap: 40px;
 }
@@ -19,25 +18,25 @@
 .footer-column {
   display: flex;
   flex-direction: column;
-  gap: 12px;
 }
 
 .footer-column h3 {
+  margin: 0 0 18px;
+
+  color: #002f34;
+
   font-size: 16px;
-
-  margin-bottom: 8px;
-
-  color: rgb(9, 9, 9);
+  font-weight: 700;
 }
 
 .footer-column a {
-  color: #8d9094;
+  margin-bottom: 12px;
+
+  color: #6b7475;
 
   font-size: 14px;
 
   text-decoration: none;
-
-  transition: color 0.2s ease;
 }
 
 .footer-column a:hover {
@@ -56,24 +55,53 @@
 
 .social-icons {
   display: flex;
-  gap: 12px;
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 16px;
+}
+
+.facebook-icon {
+  transform: scale(2);
+}
+.insta-icon{
+  transform: scale(2);
+}
+.you-icon{
+  transform: scale(1.5);
+}
+.x-icon{
+  transform: scale(1.8);
+}
+.what-icon{
+  transform: scale(1.9);
+}
+
+.link-icon{
+  transform: scale(1.5);
 }
 
 .social-icons a {
-  width: 38px;
-  height: 38px;
+  width: 27px;
+  height: 30px;
+
+  margin: 0;
 
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.social-icons img {
+  width: 20px;
+  height: 20px;
+
+  display: block;
+
+  object-fit: contain;
 
   border-radius: 50%;
-  overflow: hidden;
-}
-.social-icons img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 .social-icons a:hover {
@@ -82,6 +110,10 @@
   border-color: #00a49a;
 
   color: white;
+}
+.follow-us {
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-bottom {

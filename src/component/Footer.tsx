@@ -56,27 +56,27 @@ function Footer() {
 
           <div className="social-icons">
             <a href="#">
-              <img src={facebookIcon} alt="Facebook" />
+              <img src={facebookIcon} alt="Facebook" className="facebook-icon" />
             </a>
 
             <a href="#">
-              <img src={instaIcon} alt="Instagram" />
+              <img src={instaIcon} alt="Instagram" className="insta-icon"/>
             </a>
 
             <a href="#">
-              <img src={youtubeIcon} alt="YouTube" />
+              <img src={youtubeIcon} alt="YouTube" className="you-icon" />
             </a>
 
             <a href="#">
-              <img src={twitterIcon} alt="Twitter" />
+              <img src={twitterIcon} alt="Twitter" className="x-icon" />
             </a>
 
             <a href="#">
-              <img src={whatsappIcon} alt="WhatsApp" />
+              <img src={whatsappIcon} alt="WhatsApp" className="what-icon" />
             </a>
 
             <a href="#">
-              <img src={linkedinIcon} alt="LinkedIn" />
+              <img src={linkedinIcon} alt="LinkedIn" className="link-icon"/>
             </a>
           </div>
 

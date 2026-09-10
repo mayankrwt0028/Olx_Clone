@@ -5,20 +5,27 @@
 }
 
 .load-more-btn {
-  padding: 14px 35px;
-  border: 2px solid #002f34;
+  padding: 11px 9px;
+
+  border: 2px solid #004896;
+
   border-radius: 6px;
-  background: white;
-  color: #002f34;
+
+  background-color: white;
+
+  color: #004896;
+
   font-size: 16px;
+
   font-weight: 600;
+
   cursor: pointer;
+
   transition: 0.2s ease;
 }
-
 .load-more-btn:hover {
-  background: #002f34;
-  color: white;
+    border: 5px solid #004896;
+  /* color: white; */
 }
 
 .load-more-btn:disabled {
